@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <title>form</title>
+<!--    css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="form.css"> 
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--mediaquery-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--    script for select dropdown menu-->
+    <script>
+         $(document).ready(function(){
+    $('select').formSelect();
+  });
+        </script>
+    </head>
+    <body>
+        
+            <div class="container col s12 m7 l7 " style="background-color: white;" id="form">
+                <div class="col s12 l7 ">
+                <h1 class="center-align">Say Hello !</h1>
+            <div class="row">
+            <form>
+                <div class="row">
+            <div class="input-field fields col s10 m10 l10" style="margin-left: 10%;">
+                <div class="row">
+                    <label for="#ur_name">Your name</label>
+            <input type="text" name="name" value="" placeholder="enter your name" id="ur_name"
+                   onfocus="this.placeholder=''" onblur="this.placeholder='enter your name'" required>
+                </div>    
+                </div>
+                    </div>
+                <div class="row">
+                <div class="input-field fields col s10 m10 l10" style="margin-left: 10%;">
+                    <div class="row">
+                        <label for="#ur_mail">Your e-mail</label>
+                    <input type="email" name="mail" value="" placeholder="enter your e-mail" id="ur_mail" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your e-mail'" required>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s10 m10 l10" style="margin-left: 10%;">
+                    <div class="row">
+                        <label>Needed Services</label>
+                    <select required>
+                    <option selected>Choose Services</option>
+                        <option>Online Store</option>
+                        <option>eCommerce Business</option>
+                        <option>UI/UX Design</option>
+                        <option>Online Services</option>
+                    </select>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s10 m10 l10" style="margin-left: 10%;">
+                    <div class="row">
+                        <label>Budget</label>
+                    <select required>
+                    <option selected>Select Budget</option>
+                        <option>1500 $</option>
+                        <option>2000 $</option>
+                        <option>2500 $</option>
+                    </select>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s10 m10 l10" style="margin-left: 10%;">
+                    <div class="row">
+                    <label>message</label>
+                        <textarea class="materialize-textarea area" placeholder="your message here..." onfocus="this.placeholder=''" onblur="this.placeholder='Your message here'"></textarea>
+                    </div>
+                    </div>
+                </div>
+                <div class="row center-align">
+                <div class="btn btn-large center-align but" style="border-bottom-left-radius: 24px; border-bottom-right-radius: 24px;border-top-left-radius: 24px;border-top-right-radius: 24px; width: 70%;display: flex;"><div class="sub">SUBMIT</div><div class="icon"><i class="material-icons right myIcon">trending_flat</i></div></div>
+                </div>
+            </form>    
+            </div>
+            </div>
+        </div>
+    
+    </body>
+</html>

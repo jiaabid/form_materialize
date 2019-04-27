@@ -1,0 +1,123 @@
+body
+{
+    background: linear-gradient(45deg,#00dbde, #fc00ff);
+    overflow-x: hidden;
+}
+h1
+{
+    font-family: "impact" , sans-serif;
+    font-size: 38px !important;
+}
+#form
+{
+    border-radius: 15px;
+    margin-top: 3%;
+    width: 40%;
+    padding: 2%;
+}
+@media screen and (max-width: 576px)
+{
+    #form
+    {
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 10%;
+        margin-bottom: 8%;
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 850px)
+{
+    #form
+    {
+        width: 78%;
+        margin-right: 10%;
+        margin-top: 10%;
+        margin-bottom: 8%;
+        padding: 2%;
+    }
+}
+.input-field
+{
+    margin-left: 10%;
+}
+
+.input-field ::focus
+{
+    background: linear-gradient(to right,#fc00ff,#00dbde ); !important
+}
+.input-field label
+{
+    font-size: 17px;
+    color: black;
+}
+::placeholder
+{
+    font-size: 22px;
+}
+input:focus
+{
+    border-bottom: 2px solid grey !important;
+}
+.area
+{
+    resize: vertical !important;
+}
+textarea:focus
+{
+    border-bottom: 2px solid grey !important; 
+}
+
+/*css for all select options*/
+.selected
+{
+ background: linear-gradient(to right,#fc00ff,#00dbde );
+}
+
+select option
+{
+    color: black !important;
+}
+.dropdown-content li>span{
+    color: black !important;
+    font-size: 15px !important;
+    border: 0 !important;
+    
+}
+.dropdown-content .selected span{
+    color: white !important;
+    font-size: 15px !important;
+    border: 0 !important;
+    
+}
+.select-dropdown{
+    font-size: 18px !important;
+}
+.dropdown-content li>span:hover{
+    background-image:  linear-gradient(45deg,#fc00ff,#00dbde) !important;
+    color: white !important;
+        
+}
+/*css for button*/
+.but
+{
+    margin-left: 15%;
+}
+.sub
+{
+    margin-left: 40%;
+}
+/* gradient animation on button*/
+.but
+{
+
+    background: linear-gradient(to left,#fc00ff,#00dbde,#fc00ff );
+     background-size: 170% 100%;
+    background-position: right bottom;
+    margin-bottom: 30px;
+    transition: all 1s ease !important;
+}
+.but:hover
+{
+    background-position: left bottom;
+}
